@@ -1,0 +1,307 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: white;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #1e1e1e;
+    color: white;
+    position: fixed;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #f1c40f; /* Gold Accent */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    background: #2c3e50;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #f39c12; /* Warm Yellow Hover */
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #1e272e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    color: #f1c40f;
+    font-size: 26px;
+}
+
+/* User Profile */
+p {
+    font-size: 18px;
+    color: #b0b0b0; /* Light gray text for paragraphs */
+}
+
+#user-name {
+    color: #3498db;
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+    margin: 10px 0;
+    border: 1px solid #444; /* Dark border for input fields */
+    border-radius: 5px;
+    background: #333; /* Dark background for inputs */
+    color: #fff; /* Light text in input fields */
+}
+
+button {
+    padding: 10px 15px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* 🌟 Challenges List */
+#challenges-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#challenges-list li {
+    background: #2c3e50; /* Darker background for challenge items */
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-left: 5px solid #3498db;
+}
+
+#challenges-list li:hover {
+    transform: translateY(-3px);
+    background: #34495e; /* Slightly lighter hover background */
+}
+
+/* 🔥 Streak Counter */
+#streak-count {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* 🎖️ Achievements Section */
+#badges {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: #f1c40f;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+    background: #f39c12;
+}
+
+/* 🏆 Leaderboard */
+#leaderboard {
+    background: #2c3e50; /* Dark background for leaderboard */
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    list-style: none;
+    padding: 15px;
+}
+
+#leaderboard li {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #444; /* Dark border for leaderboard items */
+}
+
+#leaderboard li:nth-child(1) {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+#leaderboard li:nth-child(2) {
+    color: #3498db;
+    font-weight: bold;
+}
+
+#leaderboard li:nth-child(3) {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* 📜 Challenge History */
+#history-list {
+    background: #2c3e50; /* Dark background for history list */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding-left: 15px;
+}
+
+#history-list li {
+    padding: 8px;
+    border-bottom: 1px solid #444; /* Dark border for history items */
+}
+
+/* 📣 Share Button */
+button#share-btn {
+    width: 100%;
+    font-size: 18px;
+    background: #2ecc71;
+}
+
+button#share-btn:hover {
+    background: #27ae60;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 240px;
+        width: calc(100% - 240px);
+    }
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    #badges {
+        justify-content: center;
+    }
+}
+
+
+
+
+/* for responsiveness */
+
+/* Hide sidebar on mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        position: absolute;
+    }
+}
+
+/* Sidebar Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 100;
+    background: #f1c40f;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* Show menu icon on mobile */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Open Sidebar when Active */
+.sidebar.active {
+    transform: translateX(0);
+}
+
+/* Sidebar Links */
+.sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+/* When Sidebar is Hidden on Mobile */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+/* 📱 Mobile Responsive Design */
+@media (max-width: 600px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@keyframes glowHeading {
+    0% { text-shadow: 0 0 5px #d35400, 0 0 10px #f39c12, 0 0 15px #e67e22; }
+    50% { text-shadow: 0 0 5px #f39c12, 0 0 20px #e67e22, 0 0 30px #d35400; }
+    100% { text-shadow: 0 0 5px #d35400, 0 0 10px #f39c12, 0 0 15px #e67e22; }
+}
+
+/* Apply the glow effect to the heading */
+h1 {
+    animation: glowHeading 1.5s infinite alternate;
+}
