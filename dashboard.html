@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Library -->
+</head>
+<body>
+    <!-- Menu Icon for Mobile -->
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2>Homecure</h2>
+        <ul>
+            <li><a href="index.html" onclick="closeSidebar()">🏠 Home</a></li>
+            <li><a href="obesity.html" onclick="closeSidebar()">⚖ Obesity Prediction</a></li>
+            <li><a href="baby_gender.html" onclick="closeSidebar()">👶 Baby Gender Prediction</a></li>
+            <li><a href="diabatic2.html" onclick="closeSidebar()">🩸 Diabetes Prediction</a></li>
+            <li><a href="health.html" onclick="closeSidebar()">📚 Health Library</a></li>
+            <li><a href="chatbot.html" onclick="closeSidebar()">🤖 Chatbot</a></li>
+            <li><a href="emergency.html" onclick="closeSidebar()">🚑 Emergency Help</a></li>
+            <li><a href="dashboard.html" onclick="closeSidebar()">📊 Health Dashboard</a></li>
+            <li><a href="challenges.html" onclick="closeSidebar()">🏆 Health Challenges</a></li>
+            <li><a href="mental_health.html" onclick="closeSidebar()">🧠 Mental Health</a></li>
+            <li><a href="symptom_checker.html" onclick="closeSidebar()">🔍 Symptom Checker</a></li>
+            <li><a href="about.html" onclick="closeSidebar()">ℹ About Us</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Health Dashboard</h1>
+        <p>Track your health metrics with real-time data visualization.</p>
+
+        <!-- Input Table for Health Data -->
+        <div class="form-container">
+            <h3>Enter Your Health Data</h3>
+            <table>
+                <tr>
+                    <th>BMI</th>
+                    <th>Sugar Level (mg/dL)</th>
+                    <th>Blood Pressure (mmHg)</th>
+                </tr>
+                <tr>
+                    <td><input type="number" id="bmi" placeholder="BMI Value"></td>
+                    <td><input type="number" id="sugar" placeholder="Sugar Level"></td>
+                    <td><input type="number" id="bp" placeholder="Blood Pressure"></td>
+                </tr>
+            </table>
+            <button onclick="updateCharts()">Update Charts</button>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="chart-container">
+            <div class="chart-box"><canvas id="lineChart"></canvas></div>
+            <div class="chart-box"><canvas id="pieChart"></canvas></div>
+            <div class="chart-box"><canvas id="gaugeChart"></canvas></div>
+            <div class="chart-box"><canvas id="barChart"></canvas></div>
+        </div>
+    </div>
+     
+
+    <script src="js/dashboard.js" defer></script>
+</body>
+</html>
+
+
+
+

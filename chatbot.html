@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - Homecure</title>
+    <link rel="stylesheet" href="css/chatbot.css">
+
+</head>
+<body>
+    <!-- Menu Icon for Mobile -->
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2>Homecure</h2>
+        <ul>
+            <li><a href="index.html" onclick="closeSidebar()">🏠 Home</a></li>
+            <li><a href="obesity.html" onclick="closeSidebar()">⚖ Obesity Prediction</a></li>
+            <li><a href="baby_gender.html" onclick="closeSidebar()">👶 Baby Gender Prediction</a></li>
+            <li><a href="diabatic2.html" onclick="closeSidebar()">🩸 Diabetes Prediction</a></li>
+            <li><a href="health.html" onclick="closeSidebar()">📚 Health Library</a></li>
+            <li><a href="chatbot.html" onclick="closeSidebar()">🤖 Chatbot</a></li>
+            <li><a href="emergency.html" onclick="closeSidebar()">🚑 Emergency Help</a></li>
+            <li><a href="dashboard.html" onclick="closeSidebar()">📊 Health Dashboard</a></li>
+            <li><a href="challenges.html" onclick="closeSidebar()">🏆 Health Challenges</a></li>
+            <li><a href="mental_health.html" onclick="closeSidebar()">🧠 Mental Health</a></li>
+            <li><a href="symptom_checker.html" onclick="closeSidebar()">🔍 Symptom Checker</a></li>
+            <li><a href="about.html" onclick="closeSidebar()">ℹ About Us</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Chat with Homecure AI 🤖</h1>
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box"></div>
+            <input type="text" id="user-input" placeholder="Ask a health question..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
+
+
+
+

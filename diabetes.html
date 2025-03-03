@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction - Homecure</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Homecure</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="obesity.html">Obesity Prediction</a></li>
+            <li><a href="baby_gender.html">Baby Gender Prediction</a></li>
+            <li><a href="diabetes.html">Diabetes Prediction</a></li>
+            <li><a href="health.html">Health Library</a></li>
+            <li><a href="chatbot.html">Chatbot</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Diabetes Prediction</h1>
+        <p>Enter your details below to predict the likelihood of diabetes.</p>
+
+        <form id="diabetes-form">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="exercise">Exercise Level:</label>
+            <select id="exercise" name="exercise">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <label for="family-history">Family History of Diabetes:</label>
+            <select id="family-history" name="family-history">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="diet">Diet Type:</label>
+            <select id="diet" name="diet">
+                <option value="Healthy">Healthy</option>
+                <option value="Unhealthy">Unhealthy</option>
+            </select>
+
+            <label for="thirst">Excessive Thirst:</label>
+            <select id="thirst" name="thirst">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="urination">Frequent Urination:</label>
+            <select id="urination" name="urination">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="js/diabetes.js"></script>
+</body>
+</html>

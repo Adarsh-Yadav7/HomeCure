@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Help & First Aid - Homecure</title>
+    <link rel="stylesheet" href="css/emergency.css">
+
+</head>
+<body>
+    <!-- Menu Icon for Mobile -->
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2>Homecure</h2>
+        <ul>
+            <li><a href="index.html" onclick="closeSidebar()">🏠 Home</a></li>
+            <li><a href="obesity.html" onclick="closeSidebar()">⚖ Obesity Prediction</a></li>
+            <li><a href="baby_gender.html" onclick="closeSidebar()">👶 Baby Gender Prediction</a></li>
+            <li><a href="diabatic2.html" onclick="closeSidebar()">🩸 Diabetes Prediction</a></li>
+            <li><a href="health.html" onclick="closeSidebar()">📚 Health Library</a></li>
+            <li><a href="chatbot.html" onclick="closeSidebar()">🤖 Chatbot</a></li>
+            <li><a href="emergency.html" onclick="closeSidebar()">🚑 Emergency Help</a></li>
+            <li><a href="dashboard.html" onclick="closeSidebar()">📊 Health Dashboard</a></li>
+            <li><a href="challenges.html" onclick="closeSidebar()">🏆 Health Challenges</a></li>
+            <li><a href="mental_health.html" onclick="closeSidebar()">🧠 Mental Health</a></li>
+            <li><a href="symptom_checker.html" onclick="closeSidebar()">🔍 Symptom Checker</a></li>
+            <li><a href="about.html" onclick="closeSidebar()">ℹ About Us</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Emergency Helpline & First Aid Guide🚑</h1>
+        
+        <!-- Emergency Helpline Numbers -->
+        <h2>📞 Emergency Contacts</h2>
+        <ul>
+            <li><strong>🚑 Ambulance:</strong> <a href="tel:102">102</a></li>
+            <li><strong>👮 Police:</strong> <a href="tel:100">100</a></li>
+            <li><strong>🔥 Fire Brigade:</strong> <a href="tel:101">101</a></li>
+            <li><strong>🆘 Disaster Management:</strong> <a href="tel:108">108</a></li>
+            <li><strong>💊 Poison Control:</strong> <a href="tel:1800116117">1800-11-6117</a></li>
+            <li><strong>🩺 Nearest Hospital:</strong> <a href="https://www.google.com/maps/search/hospital+near+me" target="_blank">Find Nearby</a></li>
+        </ul>
+
+        <!-- First Aid Guide -->
+        <h2>⛑ First Aid Guide</h2>
+        <label for="firstAidSelector">Select an Emergency:</label>
+        <select id="firstAidSelector" onchange="showFirstAidInfo()">
+            <option value="">-- Select --</option>
+            <option value="burns">🔥 Burns</option>
+            <option value="cuts">🩸 Cuts & Wounds</option>
+            <option value="choking">😮 Choking</option>
+            <option value="heart_attack">❤️ Heart Attack</option>
+            <option value="fracture">🦴 Bone Fracture</option>
+            <option value="poisoning">☠️ Poisoning</option>
+            <option value="electric_shock">⚡ Electric Shock</option>
+            <option value="nose_bleed">👃 Nose Bleed</option>
+            <option value="snake_bite">🐍 Snake Bite</option>
+            <option value="unconscious">😵 Unconscious Person</option>
+            <option value="heat_stroke">☀️ Heat Stroke</option>
+            <option value="hypothermia">❄️ Hypothermia</option>
+        </select>
+
+        <div id="firstAidInfo">
+            <p>Select an emergency from the dropdown to see first-aid steps.</p>
+        </div>
+
+        <!-- SOS Button -->
+        <button id="sosButton">🚨 Send SOS</button>
+    </div>
+
+    <script src="js/emergency.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker</title>
+    <link rel="stylesheet" href="css/symptom_checker.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Homecure</h2>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="obesity.html">⚖ Obesity Prediction</a></li>
+            <li><a href="baby_gender.html">👶 Baby Gender Prediction</a></li>
+            <li><a href="diabatic2.html">🩸 Diabetes Prediction</a></li>
+            <li><a href="health.html">📚 Health Library</a></li>
+            <li><a href="chatbot.html">🤖 Chatbot</a></li>
+            <li><a href="emergency.html">🚑 Emergency Help</a></li>
+            <li><a href="dashboard.html" class="active">📊 Health Dashboard</a></li>
+            <li><a href="challenges.html">🏆 Health Challenges</a></li>
+            <li><a href="mental_health.html">🧠 Mental Health</a></li>
+            <li><a href="symptom_checker.html">🔍 Symptom Checker</a></li>
+            <li><a href="about.html">ℹ About Us</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>🤖 Symptom Checker</h1>
+        <p>Enter your symptoms to get possible health conditions.</p>
+
+        <label for="symptoms">Enter Symptoms (comma-separated):</label>
+        <input type="text" id="symptoms" placeholder="e.g., fever, cough, headache">
+        <button onclick="checkSymptoms()">Check Health</button>
+
+        <h2>🩺 Possible Conditions:</h2>
+        <p id="condition-result"></p>
+        
+        <h2>🩹 Precautions & Remedies:</h2>
+        <p id="remedies"></p>
+    </div>
+
+    <script src="js/symptom_checker.js"></script>
+</body>
+</html>
