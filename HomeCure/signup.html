@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Homecure</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Create an Account</h2>
+        <form id="signupForm"> <!-- ✅ Added ID, Removed method="POST" -->
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="fullName" placeholder="Full Name" required>
+            </div>
+            
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <small id="emailError"></small>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Create a password" required>
+                <span class="toggle-password" onclick="togglePassword()">👁</span>
+                <small id="passwordError"></small>
+                <div class="password-strength"></div>
+            </div>
+
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+
+            <div class="social-login">
+                <button class="google-btn">Sign up with Google</button>
+                <button class="facebook-btn">Sign up with Facebook</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/signup.js"></script>
+</body>
+</html>

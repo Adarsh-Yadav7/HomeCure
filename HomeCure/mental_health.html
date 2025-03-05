@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health & Meditation</title>
+    <link rel="stylesheet" href="css/mental_health.css">
+</head>
+<body>
+    <!-- Menu Icon for Mobile -->
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2>Homecure</h2>
+        <ul>
+            <li><a href="index.html" onclick="closeSidebar()">🏠 Home</a></li>
+            <li><a href="obesity.html" onclick="closeSidebar()">⚖ Obesity Prediction</a></li>
+            <li><a href="baby_gender.html" onclick="closeSidebar()">👶 Baby Gender Prediction</a></li>
+            <li><a href="diabatic2.html" onclick="closeSidebar()">🩸 Diabetes Prediction</a></li>
+            <li><a href="health.html" onclick="closeSidebar()">📚 Health Library</a></li>
+            <li><a href="chatbot.html" onclick="closeSidebar()">🤖 Chatbot</a></li>
+            <li><a href="emergency.html" onclick="closeSidebar()">🚑 Emergency Help</a></li>
+            <li><a href="dashboard.html" onclick="closeSidebar()">📊 Health Dashboard</a></li>
+            <li><a href="challenges.html" onclick="closeSidebar()">🏆 Health Challenges</a></li>
+            <li><a href="mental_health.html" onclick="closeSidebar()">🧠 Mental Health</a></li>
+            <li><a href="symptom_checker.html" onclick="closeSidebar()">🔍 Symptom Checker</a></li>
+            <li><a href="report.html" onclick="closeSidebar()">🩺 Report</a></li>
+            <li><a href="diet.html" onclick="closeSidebar()">🥗 AI Diet Planner</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>🧘 Mental Health & Meditation</h1>
+        
+        <h2>🕊️ Guided Meditation Videos</h2>
+        <div id="meditation-videos">
+            <!-- YouTube Videos Will Load Here -->
+        </div>
+
+        <h2>💡 Take a Quick Stress Level Quiz</h2>
+        <p>Answer the following questions to check your stress level:</p>
+        
+        <form id="stress-quiz">
+            <label>1. How often do you feel overwhelmed?</label>
+            <select id="q1">
+                <option value="1">Rarely</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Often</option>
+                <option value="4">Always</option>
+            </select>
+
+            <label>2. How is your sleep quality?</label>
+            <select id="q2">
+                <option value="1">Great</option>
+                <option value="2">Average</option>
+                <option value="3">Poor</option>
+                <option value="4">Very bad</option>
+            </select>
+
+            <label>3. Do you often feel anxious?</label>
+            <select id="q3">
+                <option value="1">No</option>
+                <option value="2">Sometimes</option>
+                <option value="3">Frequently</option>
+                <option value="4">All the time</option>
+            </select>
+
+            <button type="button" id="submit-quiz">Check Stress Level</button>
+        </form>
+
+        <p><strong>Your Stress Level:</strong> <span id="stress-result">Not calculated</span></p>
+    </div>
+
+    <script src="js/mental_health.js"></script>
+</body>
+</html>

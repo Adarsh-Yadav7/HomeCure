@@ -1,0 +1,335 @@
+/* Ensuring Full-Screen View with Sidebar Fixed */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #1e272e, #485460, #2c3e50);
+    background-size: 400% 400%;
+    animation: darkGradientBG 8s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Dark Animated Background */
+@keyframes darkGradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #121212;
+    color: white;
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f1c40f; /* Gold Accent */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    background: #2c3e50;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #f39c12; /* Warm Yellow Hover */
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Main Content Centered */
+.main-content {
+    margin-left: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 270px);
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    color: #f1c40f;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Form Box */
+form {
+    width: 400px;
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-top: 5px solid #e67e22;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #1e272e;
+    color: white;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}
+
+/* Result Display */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+    .main-content {
+        margin-left: 220px;
+        width: calc(100% - 220px);
+        padding: 15px;
+    }
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 180px;
+    }
+    .main-content {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Result Box Styling */
+.result-box {
+    width: 90%;
+    height: 60%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Low Risk - Green Glow */
+.low-risk {
+    background: linear-gradient(45deg, #2ecc71, #27ae60, #1abc9c);
+    background-size: 200% 200%;
+    color: white;
+    animation: glowGreen 1.5s infinite alternate, moveBG 4s infinite linear;
+}
+
+/* Medium Risk - Yellow Glow */
+.medium-risk {
+    background: linear-gradient(45deg, #f1c40f, #f39c12, #e67e22);
+    background-size: 200% 200%;
+    color: black;
+    animation: glowYellow 1.5s infinite alternate, moveBG 4s infinite linear;
+}
+
+/* High Risk - Red Glow */
+.high-risk {
+    background: linear-gradient(45deg, #e74c3c, #c0392b, #ff7675);
+    background-size: 200% 200%;
+    color: white;
+    animation: glowRed 1.5s infinite alternate, moveBG 4s infinite linear;
+}
+
+/* Error - Red Pulsating with Shake */
+.error {
+    background: linear-gradient(45deg, #e74c3c, #c0392b, #ff7675);
+    background-size: 200% 200%;
+    color: white;
+    animation: glowRed 1.5s infinite alternate, moveBG 4s infinite linear, shake 0.5s infinite;
+}
+
+/* Glow Animations */
+@keyframes glowGreen {
+    0% { box-shadow: 0 0 10px rgba(46, 204, 113, 0.4); }
+    100% { box-shadow: 0 0 40px rgba(46, 204, 113, 1); }
+}
+
+@keyframes glowYellow {
+    0% { box-shadow: 0 0 10px rgba(241, 196, 15, 0.4); }
+    100% { box-shadow: 0 0 40px rgba(241, 196, 15, 1); }
+}
+
+@keyframes glowRed {
+    0% { box-shadow: 0 0 10px rgba(231, 76, 60, 0.4); }
+    100% { box-shadow: 0 0 40px rgba(231, 76, 60, 1); }
+}
+
+/* Background Animation */
+@keyframes moveBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Shake Effect for Errors */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+}
+
+/* Fade In Effect */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Hover Effect */
+.result-box:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* for responsiveness */
+
+/* Hide sidebar on mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        position: absolute;
+    }
+}
+
+/* Sidebar Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 100;
+    background: #f1c40f;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* Show menu icon on mobile */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Open Sidebar when Active */
+.sidebar.active {
+    transform: translateX(0);
+}
+
+/* Sidebar Links */
+.sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+/* When Sidebar is Hidden on Mobile */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+/* 📱 Mobile Responsive Design */
+@media (max-width: 600px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+
+@keyframes glowHeading {
+    0% { text-shadow: 0 0 5px #d35400, 0 0 10px #f39c12, 0 0 15px #e67e22; }
+    50% { text-shadow: 0 0 5px #f39c12, 0 0 20px #e67e22, 0 0 30px #d35400; }
+    100% { text-shadow: 0 0 5px #d35400, 0 0 10px #f39c12, 0 0 15px #e67e22; }
+}
+
+/* Apply the glow effect to the heading */
+h1 {
+    animation: glowHeading 1.5s infinite alternate;
+}

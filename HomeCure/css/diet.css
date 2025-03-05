@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: white;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #1e1e1e;
+    color: white;
+    position: fixed;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #f1c40f; /* Gold Accent */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    background: #2c3e50;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #f39c12; /* Warm Yellow Hover */
+    color: #000;
+    transform: scale(1.05);
+}
+
+
+/* 🏆 Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    min-height: 100vh;
+    background: #1e272e; /* Softer dark shade */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🥗 Diet Input Box */
+.diet-container {
+    width: 100%;
+    max-width: 500px; /* Keeps form well-aligned */
+    background: #2c3e50; /* Modern dark blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 📋 Meal Plan Output Box */
+.meal-plan-box {
+    width: 100%;
+    max-width: 500px;
+    background: #3a4a5e; /* Dark Grayish-Blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+/* 🌟 Headings */
+h1 {
+    color: #f1c40f;
+    font-size: 26px;
+    animation: glowHeading 1.5s infinite alternate;
+}
+
+h3 {
+    color: #f1c40f;
+}
+
+/* 📌 Form Styling */
+label {
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+}
+
+select, button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Select Box */
+select {
+    background: #34495e;
+    color: white;
+    border: 1px solid #444;
+}
+
+/* 🟠 Button */
+button {
+    background-color: #f39c12;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    background-color: #e67e22;
+    box-shadow: 0 0 15px #f1c40f;
+    transform: scale(1.1);
+}
+
+/* ✨ Glow Effect */
+@keyframes glowHeading {
+    0% { text-shadow: 0 0 5px #f39c12, 0 0 10px #e67e22; }
+    50% { text-shadow: 0 0 15px #e67e22, 0 0 25px #d35400; }
+    100% { text-shadow: 0 0 5px #f39c12, 0 0 10px #e67e22; }
+}
+
+/* 📋 Meal Plan Output Box */
+.meal-plan-box {
+    width: 100%;
+    max-width: 500px;
+    background: #3a4a5e; /* Dark Grayish-Blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+    text-align: left;
+    font-size: 16px;
+}
+
+/* 📌 Meal Plan Headings */
+.meal-plan-box h3 {
+    color: #f1c40f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* 📌 Meal Plan Content */
+.meal-plan-box p {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* for responsiveness */
+
+/* Hide sidebar on mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        position: absolute;
+    }
+}
+
+/* Sidebar Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 100;
+    background: #f1c40f;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* Show menu icon on mobile */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Open Sidebar when Active */
+.sidebar.active {
+    transform: translateX(0);
+}
+
+/* Sidebar Links */
+.sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+/* When Sidebar is Hidden on Mobile */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+/* 📱 Mobile Responsive Design */
+@media (max-width: 600px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@keyframes glowHeading {
+    0% { text-shadow: 0 0 5px #d35400, 0 0 10px #f39c12, 0 0 15px #e67e22; }
+    50% { text-shadow: 0 0 5px #f39c12, 0 0 20px #e67e22, 0 0 30px #d35400; }
+    100% { text-shadow: 0 0 5px #d35400, 0 0 10px #f39c12, 0 0 15px #e67e22; }
+}
+
+/* Apply the glow effect to the heading */
+h1 {
+    animation: glowHeading 1.5s infinite alternate;
+}

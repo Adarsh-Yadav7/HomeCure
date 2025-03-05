@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obesity Prediction</title>
+    <link rel="stylesheet" href="css/obesity.css">
+
+</head>
+<body>
+    <!-- Menu Icon for Mobile -->
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2>Homecure</h2>
+        <ul>
+            <li><a href="index.html" onclick="closeSidebar()">🏠 Home</a></li>
+            <li><a href="obesity.html" onclick="closeSidebar()">⚖ Obesity Prediction</a></li>
+            <li><a href="baby_gender.html" onclick="closeSidebar()">👶 Baby Gender Prediction</a></li>
+            <li><a href="diabatic2.html" onclick="closeSidebar()">🩸 Diabetes Prediction</a></li>
+            <li><a href="health.html" onclick="closeSidebar()">📚 Health Library</a></li>
+            <li><a href="chatbot.html" onclick="closeSidebar()">🤖 Chatbot</a></li>
+            <li><a href="emergency.html" onclick="closeSidebar()">🚑 Emergency Help</a></li>
+            <li><a href="dashboard.html" onclick="closeSidebar()">📊 Health Dashboard</a></li>
+            <li><a href="challenges.html" onclick="closeSidebar()">🏆 Health Challenges</a></li>
+            <li><a href="mental_health.html" onclick="closeSidebar()">🧠 Mental Health</a></li>
+            <li><a href="symptom_checker.html" onclick="closeSidebar()">🔍 Symptom Checker</a></li>
+            <li><a href="report.html" onclick="closeSidebar()">🩺 Report</a></li>
+            <li><a href="diet.html" onclick="closeSidebar()">🥗 AI Diet Planner</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Obesity Prediction</h1>
+        <form id="obesityForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+        
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" required>
+        
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+        
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" required>
+        
+            <label for="activity">Physical Activity Level:</label>
+            <input type="number" id="activity" required>
+        
+            <button type="submit">Predict</button>
+        </form>
+        
+        <div id="obesityResult"></div>
+        
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

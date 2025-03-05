@@ -1,0 +1,540 @@
+/* Health Report Page - Dark Theme */
+
+/* Main Content */
+
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e272e, #485460);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+/* Page Title */
+h2 {
+    text-align: center;
+    color: #f1c40f; /* Gold Accent */
+    font-size: 28px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Report Content Box */
+#report-content {
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+    font-size: 18px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Report Text Styling */
+#report-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #ecf0f1;
+}
+
+#report-content strong {
+    color: #f1c40f; /* Highlight important text */
+}
+
+/* Download Button */
+#download-pdf {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 18px;
+    background: #f39c12;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(243, 156, 18, 0.3);
+}
+
+#download-pdf:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    #report-content {
+        width: 100%;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #1e272e, #485460, #2c3e50, #34495e);
+    background-size: 400% 400%;
+    color: white; /* Light text for contrast */
+    animation: darkGradientBG 8s ease infinite;
+}
+
+
+
+
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #1e1e1e; /* Dark sidebar */
+    color: white;
+    position: fixed;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #f1c40f; /* Gold Accent */
+    transition: color 0.3s ease;
+}
+
+.sidebar h2:hover {
+    color: #f39c12; /* Hover effect on header */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    background: #2c3e50; /* Dark blue-gray */
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #f39c12; /* Warm Yellow Hover */
+    color: black;
+    transform: scale(1.05);
+}
+
+
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #1e272e; /* Deep dark shade */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    color: #f1c40f; /* Gold Accent */
+    font-size: 26px;
+    animation: fadeIn 2s ease-out;
+    animation: glowHeading 1.5s infinite alternate;
+}
+
+/* Fade-in animation for headings */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 210px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .main-content {
+        margin-left: 190px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+/* Feature Images */
+.feature-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Adjust the size as needed */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #2c3e50; /* Darker background */
+    border: 1px solid #f1c40f; /* Gold border */
+    color: white; /* Text color */
+}
+
+.feature-image:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Features List Styling */
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature-item {
+    text-align: center;
+    width: 280px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+.feature-item:hover h3 {
+    color: #f39c12; /* Change text color on hover */
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #2c3e50;
+   
+}
+
+/* Call to Action Section */
+.call-to-action {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.call-to-action h2 {
+    font-size: 24px;
+    color: #f39c12;
+    animation: fadeIn 2s ease-out;
+}
+
+.call-to-action p {
+    font-size: 16px;
+    color: #ecf0f1;
+}
+
+/* Footer Styling */
+footer {
+    background:  #1e1e1e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content ul li a {
+    color: white;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    color: #f39c12; /* Hover effect on footer links */
+}
+
+/* Result Box Styling */
+.result-box {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Different Colors for Different Predictions */
+.result-box.normal {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    box-shadow: 0px 0px 15px #2ecc71;
+}
+
+.result-box.overweight {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+    box-shadow: 0px 0px 15px #f39c12;
+}
+
+.result-box.obese {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    box-shadow: 0px 0px 15px #e74c3c;
+}
+
+.result-box.error {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    color: white;
+    box-shadow: 0px 0px 15px #8e44ad;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 220px;
+        left: -220px;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+}
+
+
+/* for responsiveness */
+
+/* Hide sidebar on mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        position: absolute;
+    }
+}
+
+/* Sidebar Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 100;
+    background: #f1c40f;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* Show menu icon on mobile */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Open Sidebar when Active */
+.sidebar.active {
+    transform: translateX(0);
+}
+
+/* Sidebar Links */
+.sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+/* When Sidebar is Hidden on Mobile */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+/* 📱 Mobile Responsive Design */
+@media (max-width: 600px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@keyframes glowHeading {
+    0% { text-shadow: 0 0 5px #d35400, 0 0 10px #f39c12, 0 0 15px #e67e22; }
+    50% { text-shadow: 0 0 5px #f39c12, 0 0 20px #e67e22, 0 0 30px #d35400; }
+    100% { text-shadow: 0 0 5px #d35400, 0 0 10px #f39c12, 0 0 15px #e67e22; }
+}
+
+/* Apply the glow effect to the heading */
+h1 {
+    animation: glowHeading 1.5s infinite alternate;
+}
+
+button:hover {
+    background-color: #e67e22; /* Slightly darker yellow */
+    color: black;
+    transform: scale(1.05);
+}
+/* Health Report Page - Dark Theme */
+
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e272e, #485460);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: #f1c40f;
+    font-size: 28px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Form Styling */
+form {
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background: #34495e;
+    color: white;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    background: #f39c12;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Report - Homecure</title>
+    <link rel="stylesheet" href="css/report.css">
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    
+    <!-- Menu Icon for Mobile -->
+    <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2>Homecure</h2>
+        <ul>
+            <li><a href="index.html" onclick="closeSidebar()">🏠 Home</a></li>
+            <li><a href="obesity.html" onclick="closeSidebar()">⚖ Obesity Prediction</a></li>
+            <li><a href="baby_gender.html" onclick="closeSidebar()">👶 Baby Gender Prediction</a></li>
+            <li><a href="diabatic2.html" onclick="closeSidebar()">🩸 Diabetes Prediction</a></li>
+            <li><a href="health.html" onclick="closeSidebar()">📚 Health Library</a></li>
+            <li><a href="chatbot.html" onclick="closeSidebar()">🤖 Chatbot</a></li>
+            <li><a href="emergency.html" onclick="closeSidebar()">🚑 Emergency Help</a></li>
+            <li><a href="dashboard.html" onclick="closeSidebar()">📊 Health Dashboard</a></li>
+            <li><a href="challenges.html" onclick="closeSidebar()">🏆 Health Challenges</a></li>
+            <li><a href="mental_health.html" onclick="closeSidebar()">🧠 Mental Health</a></li>
+            <li><a href="symptom_checker.html" onclick="closeSidebar()">🔍 Symptom Checker</a></li>
+            <li><a href="report.html" onclick="closeSidebar()">🩺 Report</a></li>
+            <li><a href="diet.html" onclick="closeSidebar()">🥗 AI Diet Planner</a></li>
+        </ul>
+    </div>
+
+    <!-- Report Section -->
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <h2>🩺 Health Report Generator</h2>
+        
+        <form id="health-form">
+            <label for="name">👤 Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">🎂 Age:</label>
+            <input type="number" id="age" required>
+
+            <label for="gender">⚥ Gender:</label>
+            <select id="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="height">📏 Height (cm):</label>
+            <input type="number" id="height" required>
+
+            <label for="weight">⚖ Weight (kg):</label>
+            <input type="number" id="weight" required>
+
+            <label for="bp">🩸 Blood Pressure (mmHg):</label>
+            <input type="text" id="bp" required>
+
+            <label for="sugar">🍬 Blood Sugar (mg/dL):</label>
+            <input type="number" id="sugar" required>
+
+            <label for="symptoms">📝 Any Symptoms:</label>
+            <input type="text" id="symptoms" required>
+
+            <button type="button" id="generate-pdf">📄 Generate PDF Report</button>
+        </form>
+    </div>
+
+    <script src="js/report.js"></script>
+
+</body>
+</html>
