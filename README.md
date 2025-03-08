@@ -52,8 +52,9 @@
 
 📊 Health Dashboard
 📈 A visual dashboard that displays user health progress over time with interactive graphs & charts.
-![Screenshot 2025-03-08 204818](https://github.com/user-attachments/assets/eb8e9d88-21ec-4567-84a7-2c36bc5a3ed6)
 ![Screenshot 2025-03-08 212105](https://github.com/user-attachments/assets/8e255874-9646-41cc-a3bb-3cdf2525f8cf)
+![Screenshot 2025-03-08 212531](https://github.com/user-attachments/assets/262a9749-ca32-46d2-9da9-b99f067af427)
+
 
 📑 Health Report (Downloadable PDF)
 📃 Generates a detailed health report based on user inputs, which can be downloaded as a PDF for personal records or sharing with doctors.
