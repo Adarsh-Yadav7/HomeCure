@@ -11,8 +11,7 @@
 ✅ Diabetes Prediction – Predicts the likelihood of diabetes based on user inputs.
 ✅ Obesity Prediction – Estimates obesity levels and provides recommendations.
 ✅ Baby Gender Prediction – Predicts the gender of an unborn baby.
-![Screenshot 2025-03-08 204444](https://github.com/user-attachments/assets/bb29ba5f-7b1f-40aa-8b72-1a1cd75c4d67)
-![Screenshot 2025-03-08 204508](https://github.com/user-attachments/assets/7c272144-7411-486a-b36e-614a704573e6)
+![Screenshot 2025-03-08 204356](https://github.com/user-attachments/assets/bac5565d-912a-4eba-a08b-05f70e4ba72e)
 
 🧠 AI-Powered Chatbot
 💬 An AI Health Chatbot that provides health-related answers, precautionary measures, and medical advice based on user queries.
