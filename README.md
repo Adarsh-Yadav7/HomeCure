@@ -22,7 +22,8 @@
 ✅ Vegetarian & Non-Vegetarian Options
 ✅ Daily Meal Suggestions
 ✅ Calorie Breakdown
-![Screenshot 2025-03-08 205023](https://github.com/user-attachments/assets/917b6908-2509-44ae-b614-c6da37ca3fdf)
+![S![Screenshot 2025-03-08 212159](https://github.com/user-attachments/assets/700414b7-75e1-4700-a70a-3c4a219475fc)
+
 
 📚 Health Library
 📖 A collection of health-related articles and videos on various topics, including:
@@ -34,7 +35,8 @@
 🏆 Health Challenges & Achievements
 🎯 Engage users with weekly health challenges, track progress, and earn badges & achievements based on consistency!
 🏅 A Leaderboard displays the top-performing users based on their health improvements.
-![Screenshot 2025-03-08 204942](https://github.com/user-attachments/assets/c8080bb9-ca35-4adb-ab03-6204a33faca5)
+
+![Screenshot 2025-03-08 212132](https://github.com/user-attachments/assets/d65cbe02-dad4-4cfb-a9cc-55fae2b01f79)
 
 🚑 Emergency Helpline & First Aid Guide
 📞 Provides emergency contact numbers (ambulance, doctors, helplines).
@@ -51,10 +53,12 @@
 📊 Health Dashboard
 📈 A visual dashboard that displays user health progress over time with interactive graphs & charts.
 ![Screenshot 2025-03-08 204818](https://github.com/user-attachments/assets/eb8e9d88-21ec-4567-84a7-2c36bc5a3ed6)
+![Screenshot 2025-03-08 212105](https://github.com/user-attachments/assets/8e255874-9646-41cc-a3bb-3cdf2525f8cf)
 
 📑 Health Report (Downloadable PDF)
 📃 Generates a detailed health report based on user inputs, which can be downloaded as a PDF for personal records or sharing with doctors.
-![Screenshot 2025-03-08 204919](https://github.com/user-attachments/assets/9560dfab-f4d5-404c-bf1f-9c94b004081c)
+
+![Screenshot 2025-03-08 212218](https://github.com/user-attachments/assets/30bd582d-44bb-45b9-ac48-89e916ec67b0)
 
 🛠️ Technologies Used
 Frontend
